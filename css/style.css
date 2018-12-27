@@ -102,6 +102,11 @@ article h2{
 	font-size: 25px;
 	text-decoration: underline;
 	padding: 0 0 3% 0;
+	text-align: center;
+}
+
+#progresss::-webkit-progress-value {
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
 }
 
 .corpo-progress-bar{
@@ -170,4 +175,49 @@ article h2{
 	height: 30px;
 	background-color: #6495ED;
 	border-radius: 15px;
+}
+
+/* Portfolio */
+
+#port{
+	width: 100%;
+	background-color: #fff;
+}
+
+.corpo-portfolio{
+	width: 91%;
+	padding-left: 9%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section h3{
+	color: #001;
+	display: block;
+	text-align:center;
+	padding: 5% 0 5% 4%;
+	font-size: 4vw;
+	text-decoration: underline;
+}
+
+.corpo-portfolio figure{
+	max-width: 50%;
+}
+
+.corpo-portfolio figure a img{
+	max-width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+	nav{
+		display: none;
+	}
+	.corpo-portfolio{
+		width: 100%;
+		display: block;
+		padding-left: 0;
+	}
+	.corpo-portfolio figure{
+		max-width: 100%;
+	}
 }
