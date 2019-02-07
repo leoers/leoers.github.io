@@ -23,6 +23,7 @@ nav{
 	position: fixed;
 	height: 100%;
 	background-color: #001;
+	z-index: 9999;
 }
 
 li{
@@ -88,14 +89,14 @@ article h2{
 }
 
 .corpo-sobre{
-	width: 75%;
+	width: 65%;
 	color: #001;
 	margin:0 auto;
 	padding: 3% 5%;	
 }
 
 .corpo-skills{
-	width: 75%;
+	width: 65%;
 	margin: 0 auto;
 	padding: 3% 0;
 }
@@ -198,14 +199,30 @@ section h3{
 	text-decoration: underline;
 }
 
-.corpo-portfolio figure{
+.corpo-portfolio .card{
 	max-width: 50%;
+	height: 275px;
+	overflow: hidden;
+	position: relative;
 }
 
-.corpo-portfolio figure a img{
-	max-width: 100%;
+
+.corpo-portfolio figcaption{
+	width: 100%;
+	text-align: center;
+	margin-top: -365px;
+	background-color: #001;
+	color: #fff;
+	padding: 20px 0;
 }
 
+
+/* Animação portfolio */
+
+.corpo-portfolio img:hover{
+	margin-top: 30px;
+	transition: 0.5s;
+}
 
 /* Footer Contato */
 
@@ -224,7 +241,7 @@ footer h3{
 }
 
 .contato{
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
 	display: flex;
 	font-size: 20px;
@@ -243,17 +260,27 @@ footer h3{
 	color: #fff;
 }
 
+.contato ul{
+	display: flex;
+}
+
 @media screen and (max-width: 1024px){
 	nav{
 		display: none;
 	}
+
 
 	.corpo-portfolio{
 		width: 100%;
 		padding-left: 0;
 	}
 
-	.corpo-portfolio figure{
+	.corpo-portfolio .card{
 		max-width: 100%;
+	}
+
+	.contato{
+		width: 80%;
+		margin-left: 0;
 	}
 }
