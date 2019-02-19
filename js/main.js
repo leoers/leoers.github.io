@@ -1,14 +1,26 @@
-//let botao = document.getElementById("teste").addEventListener("click", function(){alert('oi')});
+let port = document.getElementsByClassName("card");
+		for(let i = 0; i < port.length; i++){
+			port[i].addEventListener("click", function(){
+				let el = port[0];
+				while(el){
+					if(el.tagName === "FIGURE"){
+						el.classList.remove('active');
+					}
+					el = el.nextSibling;
+				}
+				this.classList.add("active");
+		})
+}
 
-	for(let x = 0; x < 50; x++){
-		let sorteio = Math.floor(Math.random()* Math.floor(100));
-		console.log(x, sorteio);
-	}
 
-	for(let x = 1; x < 26; x++){
-		let sorteio = Math.floor(Math.random()* Math.floor(1 + 25));
-		console.log(x, sorteio);
-	}
+
 	
+
+
+
+	
+
+
+
 
 
