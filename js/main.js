@@ -1,4 +1,4 @@
-let port = document.getElementsByClassName("card");
+/*let port = document.getElementsByClassName("card");
 		for(let i = 0; i < port.length; i++){
 			port[i].addEventListener("click", function(){
 				let el = port[0];
