@@ -148,6 +148,20 @@ article h2{
 	border-radius: 15px;
 }
 
+.corpo-progress-bar .corpo-progress-bar-json{
+	width: 85%;
+	height: 30px;
+	background-color: #101010;
+	border-radius: 15px;
+}
+
+.corpo-progress-bar .corpo-progress-bar-ajax{
+	width: 85%;
+	height: 30px;
+	background-color: #D34B42;
+	border-radius: 15px;
+}
+
 .corpo-progress-bar .corpo-progress-bar-git{
 	width: 70%;
 	height: 30px;
